@@ -4,3 +4,56 @@
 *{
     font-family: "Bai Jamjuree";
 }
+
+/* header styles */
+header{
+    background: cornsilk;
+    padding: 50px 240px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title{
+    font-size: 2.5rem;
+    color: rgb(45, 160, 164);
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(27, 111, 139);
+}
+
+nav li a:hover{
+    color: turquoise;
+}
+
+/* banner styles */
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.banner-description{
+    color: rgb(3, 3, 4);
+}
