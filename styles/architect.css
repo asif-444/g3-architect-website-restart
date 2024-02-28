@@ -1,59 +1,96 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 
-*{
+/* shared style */
+* {
     font-family: "Bai Jamjuree";
 }
 
+.btn-primary {
+    border-radius: 8px;
+    background: orangered;
+    padding: 20px 25px;
+    color: aliceblue;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: 0;
+}
+
 /* header styles */
-header{
+header {
     background: cornsilk;
     padding: 50px 240px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-title{
+.nav-title {
     font-size: 2.5rem;
-    color: rgb(45, 160, 164);
+    color: rgb(27, 111, 139);;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
 }
 
-nav li{
+nav li {
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
     font-size: 1em;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
     color: rgb(27, 111, 139);
 }
 
-nav li a:hover{
-    color: turquoise;
+nav li a:hover {
+    color: rgb(177, 0, 136);
 }
 
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
 
-.banner-title{
+.banner-title {
     font-size: 4rem;
     font-weight: 600;
 }
 
-.banner-description{
+.banner-description {
     color: rgb(3, 3, 4);
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* responsive styles */
+/* mobile device */
+@media screen  and (max-width: 576px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
 }
