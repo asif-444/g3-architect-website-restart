@@ -115,6 +115,33 @@ main {
     font-weight: 600;
 }
 
+/* feature section style */
+.section-title{
+    border-left: 5px solid orangered;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.features {
+    display: flex;
+    margin-top: 110px;
+    gap: 100px;
+}
+
+.feature-contents .card {
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.ten-yrs-xp{
+    width: 245px;
+    text-align: center;
+    font-size: 25px;
+}
+
 /* facts section */
 .facts-headline {
     text-align: center;
@@ -144,7 +171,7 @@ main {
     text-align: center;
 }
 
-.sponsors-img-container{
+.sponsors-img-container {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
@@ -152,7 +179,7 @@ main {
     gap: 40px;
 }
 
-.sponsors-img-container img{
+.sponsors-img-container img {
     width: 147px;
 }
 
