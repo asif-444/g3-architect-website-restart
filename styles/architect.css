@@ -34,7 +34,8 @@ nav {
 
 .nav-title {
     font-size: 2.5rem;
-    color: rgb(27, 111, 139);;
+    color: rgb(27, 111, 139);
+    ;
 }
 
 nav>ul {
@@ -71,62 +72,109 @@ nav li a:hover {
 }
 
 
-.banner img{
+.banner img {
     width: 100%;
     margin-top: 20px;
 }
 
 /* main section style */
-main{
+main {
     max-width: 1440px;
     margin: 70px auto;
 }
 
 /* team style */
-.team-container{
+.team-container {
     display: flex;
     align-items: center;
 }
 
-.team-img-container{
+.team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 
-.team-content{
+.team-content {
     padding-left: 70px;
     padding-right: 70px;
 }
 
-.team-title{
+.team-title {
     font-size: 2.4rem;
 
 }
 
-.team-title .quick-list{
+.team-title .quick-list {
     color: gray;
     font-weight: 500;
 }
 
-.team-title .text-features{
+.team-title .text-features {
     color: orangered;
     font-weight: 600;
 }
 
+/* facts section */
+.facts-headline {
+    text-align: center;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid orangered;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 40px 30px;
+}
+
+.facts-card-container .card-stats {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* sponsors styles */
+.sponsors {
+    text-align: center;
+}
+
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.sponsors-img-container img{
+    width: 147px;
+}
+
 /* responsive styles */
 /* mobile device */
-@media screen  and (max-width: 576px){
-    header{
+@media screen and (max-width: 576px) {
+    header {
         padding: 20px;
     }
-    nav, .team-container{
+
+    nav,
+    .team-container,
+    .facts-card-container,
+    .sponsors-img-container {
         flex-direction: column;
     }
-    .team-img-container{
+
+    .team-img-container {
         grid-template-columns: 1fr;
     }
-    .team-content{
+
+    .team-content {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -134,10 +182,13 @@ main{
 
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav, .team-container{
+
+    nav,
+    .team-container,
+    .sponsors-img-container {
         flex-direction: column;
     }
 }
