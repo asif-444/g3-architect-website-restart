@@ -140,7 +140,10 @@ main {
     width: 245px;
     text-align: center;
     font-size: 25px;
+    position: relative;
+    bottom: 60px;
 }
+
 
 /* facts section */
 .facts-headline {
@@ -193,7 +196,8 @@ main {
     nav,
     .team-container,
     .facts-card-container,
-    .sponsors-img-container {
+    .sponsors-img-container,
+    .features {
         flex-direction: column;
     }
 
@@ -205,6 +209,16 @@ main {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .feature-img img{
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .feature-img img{
+        margin-left: 90px;
+        width: 90%;;
+    }
 }
 
 /* tablet or medium devices */
@@ -215,7 +229,8 @@ main {
 
     nav,
     .team-container,
-    .sponsors-img-container {
+    .sponsors-img-container,
+    .features {
         flex-direction: column;
     }
 }
